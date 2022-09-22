@@ -29,7 +29,10 @@ namespace Rapr.Utils
         /// Driver class (ex., "System Devices")
         /// </summary>
         public string DriverClass { get; set; }
-
+        /// <summary>
+        /// Driver class name
+        /// </summary>
+        public string DriverClassName { get; set; }
         /// <summary>
         /// Driver ExtensionId.
         /// </summary>

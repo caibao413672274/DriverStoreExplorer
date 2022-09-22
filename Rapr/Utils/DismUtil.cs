@@ -92,6 +92,7 @@ namespace Rapr.Utils
                         DriverStoreEntry driverStoreEntry = new DriverStoreEntry
                         {
                             DriverClass = driverPackage.ClassDescription,
+                            DriverClassName = driverPackage.ClassName,
                             DriverInfName = Path.GetFileName(driverPackage.OriginalFileName),
                             DriverPublishedName = driverPackage.PublishedName,
                             DriverPkgProvider = driverPackage.ProviderName,
@@ -110,7 +111,7 @@ namespace Rapr.Utils
 
                         driverStoreEntry.DeviceName = deviceInfo?.DeviceName;
                         driverStoreEntry.DevicePresent = deviceInfo?.IsPresent;
-
+                        
                         driverStoreEntries.Add(driverStoreEntry);
                     }
                 }
